@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class notification extends Model
+{
+    use HasFactory;
+    protected $guarded = [];
+
+    public function getCreatedAtAttribute($value)
+    {
+        return date('D, M d, Y h:ia', strtotime($value) );
+    }
+
+    function user()
+    {
+        return $this->belongsTo((User::class))->withDefault((['name'=>'']));
+    }
+}
+

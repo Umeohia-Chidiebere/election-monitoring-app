@@ -1,0 +1,27 @@
+{
+    "short_name": "APC",
+    "name": "APC - Election Monitoring Software",
+    "description": "APC - Election Monitoring Software",
+    "icons": 
+    [
+      {
+        "src": "/assets/images/logo.png",
+        "type": "image/png",
+        "sizes": "150x150"
+      },
+      {
+        "src": "/assets/images/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/images/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "green",
+    "display": "standalone",
+    "theme_color": "green"
+  }
